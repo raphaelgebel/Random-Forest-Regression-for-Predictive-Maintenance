@@ -51,6 +51,9 @@ Since the RUL is not provided as part of the dataset, it is computed as follows:
 
 RUL = time of the next malfunction - current time
 
+![RUL for machineID 1](Pictures/RUL_for_machineID_1.png)
+
+
 **3. Random Forest Regression**
 - Feature selection and engineering
 - Splitting the dataset into a test- and train-set
@@ -82,3 +85,5 @@ Preventive maintenance: Unlike fixed-interval schedules (preventive maintenance)
 **Limitations:**
 
 The MAE of 11 hours could be critical in production systems with high risk and is potentially not sufficient.
+
+![Actual vs Predicted RUL](Pictures/Actual_vs_Predicted_RUL.png)
