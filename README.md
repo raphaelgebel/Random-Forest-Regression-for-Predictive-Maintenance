@@ -3,7 +3,7 @@
 
 This project was developed as part of the course **'Projektstudium'** at **OTH Regensburg**.
 
-It's goal is to use **Random Forest Regression** to predict the **Remaining Useful Life (RUL)** of machines baased on historical sensor data as well as malfunction logs.
+It's goal is to use **Random Forest Regression** to predict the **Remaining Useful Life (RUL)** of machines based on historical sensor data as well as malfunction logs.
 
 ---
 
