@@ -59,3 +59,26 @@ RUL = time of the next malfunction - current time
 
 ---
 
+### Results and practical implications
+
+**Results:**
+
+High R²-score: the model reliably predicts the trends in the data.
+
+Low MAE: the average prediction error is relatively small (considering the RUL goes up to almost 2.000 hours).
+
+**Practical implications:**
+
+With an MAE of roughly +/- 11 hours, maintenance activities can be scheduled in advance with an accuracy of roughly half a day.
+The implemented model could be used to support maintenance planning. If malfunctions are critical, maintenance activities should be scheduled at least 11 hours before the predicted malfunction in order to account for the MAE.
+For example: If the predicted RUL is 100 hours, the actual RUL will be between 89 and 111 hours on average. Therefore, it makes sense to perform maintenance within the next 89 hours.
+Depending of the criticality and risk of potential malfunctions, additional measures - such as manual monitoring - should be employed together with such a prediction model.
+Comparison to other maintenance strategies:
+
+Reactive maintenance: Unlike reactive maintenance, the implemented random forest model allows the anticipation of malfunctions, before they happen. Therefore unplanned downtimes can be avoided by taking maintenance actions in advance.
+
+Preventive maintenance: Unlike fixed-interval schedules (preventive maintenance), the implemented random forest model aligns maintenance activities with the actual machine-conditions. Therefore unnecessary maintenance activities can be reduced.
+
+**Limitations:**
+
+The MAE of 11 hours could be critical in production systems with high risk and is potentially not sufficient.
