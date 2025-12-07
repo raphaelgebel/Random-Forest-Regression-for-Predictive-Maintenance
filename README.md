@@ -54,7 +54,7 @@ RUL = time of the next malfunction - current time
 **3. Random Forest Regression**
 - Feature selection and engineering
 - Splitting the dataset into a test- and train-set
-- Model training using RandomForestRegressor
+- Model training using `RandomForestRegressor`
 - Model evaluation using the metrics R² (R-squared) and MAE (Mean average error)
 
 ---
